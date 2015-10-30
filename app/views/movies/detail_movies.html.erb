@@ -1,0 +1,25 @@
+<h1>Detailed Information</h1>
+
+<table>
+  <tr>
+    <td>
+      <h3> <%= @current.title %> </h3>
+      <p>Duration : <%= @current.duration %></p>
+    </td>
+    <td rowspan="3">
+      <%= @current.description %>
+    </td>
+  </tr>
+
+  <tr>
+    <td><img src="<%= @current.image_url %>" width="180"></td>
+  </tr>
+
+  <tr>
+    <td><%= @current.year %></td>
+  </tr>
+</table>
+
+<a href="http://localhost:3000/movies">Back</a>
+<a href="http://localhost:3000/movies/<%= @id %>/edit_form">Edit</a>
+<a href="http://localhost:3000/delete_movies/<%= @id %>">Delete</a>

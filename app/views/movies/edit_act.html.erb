@@ -1,0 +1,27 @@
+<h1>Update Actor Entry</h1>
+
+<form action="http://localhost:3000/update_act/<%= @id %>">
+  <div>
+    <label>Name</label>
+    <input type="text" name="name" value="<%= @current.name %>">
+  </div>
+
+  <div>
+    <label>Bio</label>
+    <input type="text" name="bio" value="<%= @current.bio %>">
+  </div>
+
+  <div>
+    <label>Date of Birth</label>
+    <input type="text" name="dob" value="<%= @current.dob %>">
+  </div>
+
+  <div>
+    <label>Picture URL</label>
+    <input type="text" name="image_url" value="<%= @current.image_url %>">
+  </div>
+
+  <div>
+    <button>Update Entry</button>
+  </div>
+</form>

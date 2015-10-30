@@ -1,0 +1,33 @@
+<h1>Update Movie Entry</h1>
+
+<form action="http://localhost:3000/update_mov/<%= @id %>">
+  <div>
+    <label>Title</label>
+    <input type="text" name="title" value="<%= @current.title %>">
+  </div>
+
+  <div>
+    <label>Description</label>
+    <input type="text" name="description" value="<%= @current.description %>">
+  </div>
+
+  <div>
+    <label>Year</label>
+    <input type="text" name="year" value="<%= @current.year %>">
+  </div>
+
+  <div>
+    <label>Duration</label>
+    <input type="text" name="duration" value="<%= @current.duration %>">
+  </div>
+
+
+  <div>
+    <label>Poster URL</label>
+    <input type="text" name="image_url" value="<%= @current.image_url %>">
+  </div>
+
+  <div>
+    <button>Update Entry</button>
+  </div>
+</form>
